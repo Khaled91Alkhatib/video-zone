@@ -1,0 +1,21 @@
+// style={{ display: "flex", alignItems: "center" }}
+.navbar-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 45px;
+}
+
+// direction="row" alignItems="center" p={2} sx={{ position: "sticky", background: "#000", top: 0, justifyContent: "space-between" }}
+.navbar-stack {
+  display: flex;
+  // flex-direction: row;
+  align-items: center;
+  padding: 16px;
+  position: sticky;
+  background-color: black;
+  top: 0;
+  justify-content: space-between;
+}

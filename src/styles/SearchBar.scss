@@ -1,0 +1,13 @@
+// sx={{ borderRadius: 20, border: "1px solid #e3e3e3", pl: 2, boxShadow: "none", mr: { sm: 5 } }}
+.main-search-layout {
+  border: 1px solid #e3e3e3;
+  // border-radius: 20px;
+  padding-left: 16px;
+  box-shadow: none;
+}
+
+// sx={{ P: "10px", color: "red" }}
+.search-button {
+  padding: 10px;
+  // color: red;
+}
