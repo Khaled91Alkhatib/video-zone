@@ -6,9 +6,20 @@ import { Search } from "@mui/icons-material";
 import "../styles/SearchBar.scss";
 
 const SearchBar = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+  const navigate = useNavigate();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (searchTerm) {
+      navigate(`/search/${searchTerm}`);
+      setSearchTerm("");
+    }
+  };
+
   return (
-    <Paper className='main-search-layout' component="form" onSubmit={() => { }} sx={{ borderRadius: 20, mr: { sm: 5 } }}>
-      <input className='search-bar' placeholder='Search...' value="" onChange={() => { }} />
+    <Paper className='main-search-layout' component="form" onSubmit={handleSubmit} sx={{ borderRadius: 20, mr: { sm: 5 } }}>
+      <input className='search-bar' placeholder='Search...' value={searchTerm} onChange={(event) => { setSearchTerm(event.target.value); }} />
       <IconButton type='submit' className='search-button' sx={{ color: "red" }}>
         <Search />
       </IconButton>
