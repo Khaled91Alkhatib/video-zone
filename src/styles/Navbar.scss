@@ -19,3 +19,36 @@
   top: 0;
   justify-content: space-between;
 }
+
+.app-name {
+  color: white;
+  font-size: 30px;
+}
+
+.icon {
+  color: red;
+  font-size: 35px;
+  margin: 0 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .app-name {
+    font-size: 18px;
+  }
+
+  .icon {
+    font-size: 23px;
+    margin: 0 5px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .app-name {
+    font-size: 15px;
+  }
+
+  .icon {
+    font-size: 20px;
+    margin: 0 2px;
+  }
+}
